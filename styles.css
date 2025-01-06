@@ -1,1 +1,53 @@
 /*  your css code here. If applicable */
+/* Using :root to set a global background color */
+:root {
+    --background-color: rgb(135, 206, 235);
+}
+
+/* Setting background color for the entire page */
+body {
+    background-color: var(--background-color);
+}
+
+/* Article Paragraph Styling */
+article p:first-child {
+    color: white;
+    background-color: black;
+}
+
+article p:nth-child(2) {
+    color: black;
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Unordered List Styling */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+ul li {
+    background-color: gray;
+    padding: 10px;
+    width: 50%;
+}
+
+/* Odd list items have white background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items with larger font size */
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item with pink background */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
+
